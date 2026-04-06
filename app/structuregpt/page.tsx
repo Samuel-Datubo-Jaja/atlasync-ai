@@ -33,9 +33,9 @@ import {
 // ============================================
 // 🚀 EASY TOGGLE: Change this to switch modes
 // ============================================
-// true  = "Launch App" button → direct access
+// true  = "Try StructureGPT free" button → direct access
 // false = "Join Waitlist" button → collect signups
-const APP_LIVE = false
+const APP_LIVE = true
 // ============================================
 
 export default function LandingPage() {
@@ -80,8 +80,8 @@ export default function LandingPage() {
               <a href="#pricing" className="text-foreground/80 hover:text-foreground transition-colors">
                 Pricing
               </a>
-              <a href="#waitlist" className="text-foreground/80 hover:text-foreground transition-colors">
-                Waitlist
+              <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-foreground transition-colors">
+                Try it free
               </a>
               <a href="#contact" className="text-foreground/80 hover:text-foreground transition-colors">
                 Contact
@@ -98,9 +98,9 @@ export default function LandingPage() {
                 {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </button>
               {APP_LIVE ? (
-                <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                   <Button className="hidden md:inline-flex bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700">
-                    Launch App
+                    Try StructureGPT free
                   </Button>
                 </a>
               ) : (
@@ -131,15 +131,15 @@ export default function LandingPage() {
               <a href="#pricing" className="text-foreground/80 hover:text-foreground transition-colors py-2">
                 Pricing
               </a>
-              <a href="#waitlist" className="text-foreground/80 hover:text-foreground transition-colors py-2">
-                Waitlist
+              <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-foreground transition-colors py-2">
+                Try it free
               </a>
               <a href="#contact" className="text-foreground/80 hover:text-foreground transition-colors py-2">
                 Contact
               </a>
               {APP_LIVE ? (
-                <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600">Launch App</Button>
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600">Try StructureGPT free</Button>
                 </a>
               ) : (
                 <a href="#waitlist">
@@ -168,7 +168,7 @@ export default function LandingPage() {
 
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-600/10 border border-teal-600/20 text-sm font-medium text-teal-600 dark:text-teal-400 mb-6">
                 <Shield className="w-4 h-4" />
-                Now in Early Access
+                Now Live
               </div>
 
               <div className="mb-3">
@@ -190,12 +190,12 @@ export default function LandingPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 {APP_LIVE ? (
                   <>
-                    <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                       <Button
                         size="lg"
                         className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white text-lg px-8 py-6 shadow-lg shadow-teal-600/25"
                       >
-                        Launch App
+                        Try StructureGPT free
                         <ChevronRight className="w-5 h-5 ml-2" />
                       </Button>
                     </a>
@@ -626,10 +626,10 @@ export default function LandingPage() {
       <section id="early-access" className="py-20 md:py-32">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">Early Access Now Open</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">StructureGPT is Now Live</h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 text-pretty">
-              StructureGPT is currently in early access. Join architects and engineers testing the future of building
-              regulations compliance.
+              Join architects and engineers already using StructureGPT to navigate UK building regulations compliance
+              faster and with confidence.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -681,12 +681,12 @@ export default function LandingPage() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#waitlist">
+              <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white text-lg px-8 py-6 shadow-lg"
                 >
-                  Join Waitlist
+                  Try StructureGPT free
                   <ChevronRight className="w-5 h-5 ml-2" />
                 </Button>
               </a>
@@ -701,39 +701,23 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Waitlist Form Section */}
+      {/* Try It Free Section */}
       <section id="waitlist" className="py-20 md:py-32 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">Join the Waitlist</h2>
-              <p className="text-lg md:text-xl text-muted-foreground text-pretty">
-                Be the first to access StructureGPT when we launch. Join the growing community of UK construction
-                professionals.
-              </p>
-            </div>
-
-            <Card className="p-10 md:p-12 border-4 border-teal-600/30 shadow-2xl bg-background">
-              {/* Tally Embed */}
-              <div className="rounded-lg overflow-hidden border-2 border-border">
-                <iframe
-                  src="https://tally.so/embed/QKeRGA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                  loading="lazy"
-                  width="100%"
-                  height="600"
-                  title="Atlasync AI Waitlist"
-                  style={{ border: 0 }}
-                ></iframe>
-              </div>
-
-              <p className="text-sm text-muted-foreground text-center mt-8">
-                We respect your privacy. No spam, ever. Read our{" "}
-                <a href="/privacy" className="text-teal-600 hover:underline font-medium">
-                  Privacy Policy
-                </a>
-                .
-              </p>
-            </Card>
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">Ready to Get Started?</h2>
+            <p className="text-lg md:text-xl text-muted-foreground mb-10 text-pretty">
+              StructureGPT is live and taking signups. Try it free — no credit card required.
+            </p>
+            <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white text-lg px-10 py-7 shadow-lg shadow-teal-600/25"
+              >
+                Try StructureGPT free
+                <ChevronRight className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -785,7 +769,7 @@ export default function LandingPage() {
               </ul>
 
               {APP_LIVE ? (
-                <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="w-full border-2">
                     Get Started
                   </Button>
@@ -840,7 +824,7 @@ export default function LandingPage() {
               </ul>
 
               {APP_LIVE ? (
-                <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white dark:text-white font-semibold border-0">
                     Subscribe Now
                   </Button>
@@ -899,7 +883,7 @@ export default function LandingPage() {
               </ul>
 
               {APP_LIVE ? (
-                <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-purple-600 hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-700 text-white dark:text-white font-semibold border-0">
                     Subscribe Now
                   </Button>
@@ -1057,17 +1041,15 @@ export default function LandingPage() {
             {APP_LIVE ? "Ready to Save 10+ Hours Per Project?" : "Join the Waitlist"}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto">
-            {APP_LIVE
-              ? "Join UK architects and engineers using StructureGPT"
-              : "Be among the first to access StructureGPT"}
+            {"Join UK architects and engineers using StructureGPT"}
           </p>
           {APP_LIVE ? (
-            <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white text-xl px-12 py-8 shadow-2xl shadow-teal-600/25"
               >
-                Launch App
+                Try StructureGPT free
                 <ChevronRight className="w-6 h-6 ml-2" />
               </Button>
             </a>
@@ -1083,9 +1065,7 @@ export default function LandingPage() {
             </a>
           )}
           <p className="text-sm text-muted-foreground mt-4">
-            {APP_LIVE
-              ? "£69/month • Cancel anytime • No credit card required"
-              : "Be first to access • No commitment required • Early access pricing"}
+            {"Free plan available • Paid plans from £19/month • Cancel anytime"}
           </p>
         </div>
       </section>

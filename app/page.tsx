@@ -25,9 +25,9 @@ import {
 // ============================================
 // 🚀 EASY TOGGLE: Change this to switch modes
 // ============================================
-// true  = "Launch App" button → direct access
+// true  = "Try StructureGPT free" button → direct access
 // false = "Join Waitlist" button → collect signups
-const APP_LIVE = false
+const APP_LIVE = true
 // ============================================
 
 export default function HomePage() {
@@ -99,9 +99,9 @@ export default function HomePage() {
                 {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </button>
               {APP_LIVE ? (
-                <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                   <Button className="hidden md:inline-flex bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700">
-                    Launch App
+                    Try StructureGPT free
                   </Button>
                 </a>
               ) : (
@@ -139,8 +139,8 @@ export default function HomePage() {
                 Contact
               </Link>
               {APP_LIVE ? (
-                <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600">Launch App</Button>
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600">Try StructureGPT free</Button>
                 </a>
               ) : (
                 <Link href="/structuregpt#waitlist">
@@ -280,12 +280,12 @@ export default function HomePage() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   {APP_LIVE ? (
-                    <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
                       <Button
                         size="lg"
                         className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white text-lg px-8 py-6"
                       >
-                        Launch App
+                        Try StructureGPT free
                         <ChevronRight className="w-5 h-5 ml-2" />
                       </Button>
                     </a>
@@ -401,20 +401,18 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-600 opacity-10 -z-10" />
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">
-            {APP_LIVE ? "Ready to Experience AI-Powered Compliance?" : "Join the Waitlist"}
+            Ready to Experience AI-Powered Compliance?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto">
-            {APP_LIVE
-              ? "Try StructureGPT and see how AI can transform your building regulations workflow."
-              : "Be among the first to experience AI-powered building regulations compliance."}
+            Try StructureGPT and see how AI can transform your building regulations workflow.
           </p>
           {APP_LIVE ? (
-            <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white text-xl px-12 py-8 shadow-2xl shadow-teal-600/25"
               >
-                Launch App
+                Try StructureGPT free
                 <ChevronRight className="w-6 h-6 ml-2" />
               </Button>
             </a>

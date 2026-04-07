@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
               <h3 className="text-xl font-semibold mb-3 mt-6">2.1 Personal Information</h3>
               <p className="text-muted-foreground mb-4">We collect the following personal information:</p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-4">
-                <li>Name and email address (when you sign up for the waitlist or create an account)</li>
+                <li>Name and email address (when you create an account)</li>
                 <li>Company name and role/profession (optional)</li>
                 <li>Payment information (processed securely through third-party payment processors)</li>
                 <li>Communication preferences</li>
@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
               <p className="text-muted-foreground mb-4">We use collected information for:</p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-4">
                 <li>Providing and maintaining StructureGPT service</li>
-                <li>Processing your waitlist registration and service requests</li>
+                <li>Processing your account registration and service requests</li>
                 <li>Sending service updates, technical notices, and security alerts</li>
                 <li>Responding to your comments, questions, and customer service requests</li>
                 <li>Analyzing usage patterns to improve our service</li>

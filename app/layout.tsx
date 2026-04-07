@@ -58,10 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <script async src="https://tally.so/widgets/embed.js"></script>
-      </head>
-      <body className={`${inter.className} font-sans antialiased`}>
+<body className={`${inter.className} font-sans antialiased`}>
         {children}
       </body>
     </html>

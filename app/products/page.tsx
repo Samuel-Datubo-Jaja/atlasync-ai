@@ -11,7 +11,7 @@ import { Check, ChevronRight, Leaf, Zap } from "lucide-react"
 // ============================================
 // true  = "Launch App" button → direct access
 // false = "Join Waitlist" button → collect signups
-const APP_LIVE = false
+const APP_LIVE = true
 // ============================================
 
 export default function ProductsPage() {
@@ -47,7 +47,7 @@ export default function ProductsPage() {
             {/* StructureGPT */}
             <Card className="p-8 border-2 border-teal-600 relative">
               <div className="absolute top-4 right-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                LIVE - Early Access
+                NOW LIVE
               </div>
               <div className="mb-6">
                 <Image
@@ -80,21 +80,13 @@ export default function ProductsPage() {
                   <span>Change monitoring alerts</span>
                 </li>
               </ul>
-              <div className="text-2xl font-bold mb-4">{APP_LIVE ? "£69/month" : "Early Access"}</div>
+              <div className="text-2xl font-bold mb-4">From £0/month</div>
               <div className="flex flex-col gap-3">
-                {APP_LIVE ? (
-                  <a href="https://structuregpt.vercel.app" target="_blank" rel="noopener noreferrer">
-                    <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700">
-                      Launch App <ChevronRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </a>
-                ) : (
-                  <Link href="/structuregpt#waitlist">
-                    <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700">
-                      Join Waitlist <ChevronRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
-                )}
+                <a href="https://www.structuregpt.co.uk" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700">
+                    Try StructureGPT free <ChevronRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </a>
                 <Link href="/structuregpt">
                   <Button variant="outline" className="w-full">
                     Learn More
